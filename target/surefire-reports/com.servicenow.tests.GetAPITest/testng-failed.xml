@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [com.servicenow.tests.GetAPITest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.servicenow.tests.GetAPITest">
+        <methods>
+          <include name="getRepoGithub"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.servicenow.tests.GetAPITest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.servicenow.tests.GetAPITest] -->

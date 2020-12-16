@@ -1,0 +1,3 @@
+com\servicenow\util\TestUtil.class
+com\servicenow\base\TestBase.class
+com\servicenow\client\RestClient.class

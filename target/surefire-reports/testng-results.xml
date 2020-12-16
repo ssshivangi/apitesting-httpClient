@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-16T14:04:09 CET" name="com.servicenow.tests.GetAPITest" finished-at="2020-12-16T14:04:17 CET" duration-ms="7780">
+    <groups>
+    </groups>
+    <test started-at="2020-12-16T14:04:09 CET" name="Command line test" finished-at="2020-12-16T14:04:17 CET" duration-ms="7780">
+      <class name="com.servicenow.tests.GetAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:09 CET" name="setUp" finished-at="2020-12-16T14:04:09 CET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getPublicRepo()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:09 CET" name="getPublicRepo" finished-at="2020-12-16T14:04:11 CET" duration-ms="1757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPublicRepo -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:11 CET" name="setUp" finished-at="2020-12-16T14:04:11 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getRepoGithub()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:11 CET" name="getRepoGithub" finished-at="2020-12-16T14:04:12 CET" duration-ms="1499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRepoGithub -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:12 CET" name="setUp" finished-at="2020-12-16T14:04:12 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getRepoNoOfFollowers()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:12 CET" name="getRepoNoOfFollowers" finished-at="2020-12-16T14:04:14 CET" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRepoNoOfFollowers -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:14 CET" name="setUp" finished-at="2020-12-16T14:04:14 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getRepoSize()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:14 CET" name="getRepoSize" finished-at="2020-12-16T14:04:15 CET" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRepoSize -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:15 CET" name="setUp" finished-at="2020-12-16T14:04:15 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getRepoStarts()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:15 CET" name="getRepoStarts" finished-at="2020-12-16T14:04:16 CET" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRepoStarts -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:16 CET" name="setUp" finished-at="2020-12-16T14:04:16 CET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getRepoWithWordInReadMe()[pri:0, instance:com.servicenow.tests.GetAPITest@4b0b0854]" started-at="2020-12-16T14:04:16 CET" name="getRepoWithWordInReadMe" finished-at="2020-12-16T14:04:17 CET" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRepoWithWordInReadMe -->
+      </class> <!-- com.servicenow.tests.GetAPITest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.servicenow.tests.GetAPITest -->
+</testng-results>
