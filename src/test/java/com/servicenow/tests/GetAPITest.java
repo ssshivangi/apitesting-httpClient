@@ -20,7 +20,7 @@ public class GetAPITest extends TestBase{
 	String apiUrl;
 	String url;
 	RestClient restClient;
-	CloseableHttpResponse closableHttpResponse;
+	CloseableHttpResponse closableHttpResponse;	
 	
 	@BeforeMethod
 	public void setUp() {
@@ -48,13 +48,10 @@ public class GetAPITest extends TestBase{
 		
 		String responseString = EntityUtils.toString(closableHttpResponse.getEntity());		
 		JSONObject responseJson = new JSONObject(responseString);
-		System.out.println("Response JSON from API:"+responseJson);
-				
-		//get the value from JSON array
+				 
 		String full_name = TestUtil.getValueByJPath(responseJson, "/items[0]/full_name");
 		boolean match = full_name.contains("github");
 		Assert.assertEquals(match, true, "Name doesn't contain github");
-		System.out.println(full_name);
 		
 	}
 	
@@ -78,13 +75,11 @@ public class GetAPITest extends TestBase{
 		
 		String responseString = EntityUtils.toString(closableHttpResponse.getEntity());		
 		JSONObject responseJson = new JSONObject(responseString);
-		System.out.println("Response JSON from API:"+responseJson);
 		
 		//get the value from JSON array
 		String full_name = TestUtil.getValueByJPath(responseJson, "/items[0]/full_name");
 		boolean match = full_name.contains("github");
 		Assert.assertEquals(match, true, "Name doesn't contain github");
-		System.out.println(full_name);
 		
 		String scope = TestUtil.getValueByJPath(responseJson, "/items[0]/private");
 		Assert.assertEquals(Boolean.parseBoolean(scope), false, "Repository is private");
@@ -111,16 +106,13 @@ public class GetAPITest extends TestBase{
 		
 		String responseString = EntityUtils.toString(closableHttpResponse.getEntity());		
 		JSONObject responseJson = new JSONObject(responseString);
-		System.out.println("Response JSON from API:"+responseJson);
 		
 		//get the value from JSON array
 		String stars_count = TestUtil.getValueByJPath(responseJson, "/items[1]/stargazers_count");
 		Assert.assertEquals(Integer.parseInt(stars_count), 500, "Repository doesn't contain 500 starts");
-		System.out.println(stars_count);
 		
 		String language = TestUtil.getValueByJPath(responseJson, "/items[1]/language");
 		Assert.assertEquals(language, "Java", "Language is not in Java");
-		System.out.println(language);
 		
 	}
 	
@@ -141,15 +133,13 @@ public class GetAPITest extends TestBase{
 		int statusCode = closableHttpResponse.getStatusLine().getStatusCode();
 		System.out.println("Status Code:"+statusCode);
 		Assert.assertEquals(statusCode, 200, "Status code is not 200");
-		String responseString = EntityUtils.toString(closableHttpResponse.getEntity());
 		
+		String responseString = EntityUtils.toString(closableHttpResponse.getEntity());		
 		JSONObject responseJson = new JSONObject(responseString);
-		System.out.println("Response JSON from API:"+responseJson);
 		
 		//get the value from JSON array
 		String followers = TestUtil.getValueByJPath(responseJson, "/items[1]/watchers_count");
 		Assert.assertEquals(Integer.parseInt(followers), 500, "Repository doesn't contain 500 followers");
-		System.out.println(followers);
 		
 	}
 	
@@ -173,12 +163,10 @@ public class GetAPITest extends TestBase{
 		
 		String responseString = EntityUtils.toString(closableHttpResponse.getEntity());		
 		JSONObject responseJson = new JSONObject(responseString);
-		System.out.println("Response JSON from API:"+responseJson);
 		
 		//get the value from JSON array
 		String size = TestUtil.getValueByJPath(responseJson, "/items[1]/size");
 		Assert.assertEquals(Integer.parseInt(size), 30000, "Repository size is not 30 MB");
-		System.out.println(size);
 		
 	}
 	

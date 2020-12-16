@@ -5,8 +5,13 @@
     <classes>
       <class name="com.servicenow.tests.GetAPITest">
         <methods>
+          <include name="getRepoSize"/>
+          <include name="getRepoWithWordInReadMe"/>
           <include name="getRepoGithub"/>
           <include name="setUp"/>
+          <include name="getRepoStarts"/>
+          <include name="getRepoNoOfFollowers"/>
+          <include name="getPublicRepo"/>
         </methods>
       </class> <!-- com.servicenow.tests.GetAPITest -->
     </classes>
